@@ -15,8 +15,7 @@ export default function Form(props) {
     props.onCancel();
     reset();
   }
-
-
+  
   return (
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
