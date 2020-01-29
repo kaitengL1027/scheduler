@@ -17,25 +17,25 @@ export default function Application(props) {
   } = useApplicationData();
   
   const interviewers = getInterviewersForDay(state, state.day);
-
+  
   const filteredAppointmentArr = getAppointmentsForDay(state, state.day);
-
+  
   const appointmentArr = filteredAppointmentArr.map(appointment => {
     const interview = getInterview(state, appointment.interview);
-
+    
     return (
       <Appointment
-        key={appointment.id}
-        id={appointment.id}
-        time={appointment.time}
-        interview={interview}
-        interviewers={interviewers}
-        bookInterview={bookInterview}
-        cancelInterview={cancelInterview}
+      key={appointment.id}
+      id={appointment.id}
+      time={appointment.time}
+      interview={interview}
+      interviewers={interviewers}
+      bookInterview={bookInterview}
+      cancelInterview={cancelInterview}
       />
-    )
-  });
-
+      )
+    });
+    
   return (
     <main className="layout">
       <section className="sidebar">
