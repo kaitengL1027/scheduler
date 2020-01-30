@@ -1,5 +1,11 @@
 # Interview Scheduler
 
+Interview Scheduler is a React-based web application. It requests data from scheduler-api and update the API database. 
+
+## Final Product
+
+
+
 ## Setup
 
 Install dependencies with `npm install`.
