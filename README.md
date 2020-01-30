@@ -4,7 +4,7 @@ Interview Scheduler is a React-based web application. It requests data from sche
 
 ## Final Product
 
-!["Screenshot of initial loadup page"](!["Screenshot of URLs page"](https://github.com/lighthouse-labs/tinyapp/blob/master/docs/urls-page.png))
+["Screenshot of initial loadup page"](!["Screenshot of URLs page"](https://github.com/lighthouse-labs/tinyapp/blob/master/docs/urls-page.png))
 
 
 ## Setup
