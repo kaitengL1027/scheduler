@@ -10,7 +10,6 @@ import Confirm from "components/Appointment/Confirm";
 import Error from "components/Appointment/Error";
 
 import useVisualMode from "hooks/useVisualMode";
-import { transformFileSync } from "@babel/core";
 
 const EMPTY = "EMPTY";
 const SHOW = "SHOW";
@@ -78,7 +77,7 @@ export default function Appointment(props) {
       )}
       {mode === SAVING && <Status message="SAVING" />}
       {mode === DELETING && <Status message="DELETING" />}
-      {mode === CONFIRM && <Confirm onCancel={() => back()} onConfirm={toConfirm} />}
+      {mode === CONFIRM && <Confirm message="Are you sure you want to delete an interview?" onCancel={() => back()} onConfirm={toConfirm} />}
       {mode === EDIT && (
         <Form 
           interviewers={props.interviewers} 
